@@ -1,0 +1,16 @@
+// create an array of sounds
+const sounds = ['applause', 'boo', 'gasp', 'tada', 'victory', 'wrong'];
+
+// For each sound, create a button and a class 'btn', update the text, append to DOM
+sounds.forEach(sound) => {
+    const btn = document.createElement('button');
+
+    // add a class of 'btn' to the button element
+    btn.classList.add('btn');
+
+    //set the button label text to be the same at the string value in the sounds array
+    btn.innerText = sound;
+
+    // Add the button to the DOM
+    document.getElementById('buttons').appendChild(btn);
+});
